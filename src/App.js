@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ReactDOM from 'react-dom';
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+    <br />
         <a
           className="App-link"
           href="https://www.iaditya.com"
@@ -30,5 +33,14 @@ function App() {
     </div>
   );
 }
+
+function Hello() {
+  return <div>Hello React!</div>;
+}
+
+// ReactDOM.render(
+//   '<Hello />',
+//   document.getElementById('mountNode')
+// );
 
 export default App;
